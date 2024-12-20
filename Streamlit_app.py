@@ -36,6 +36,8 @@ def welcome_section():
         Get started by navigating through the sections.
     """)
 
+import streamlit as st
+import pandas as pd
 def data_overview_section():
     st.title("Data Overview")
     st.write("This section provides an overview of the dataset.")
@@ -91,6 +93,10 @@ def data_overview_section():
     else:
         st.write("No categorical variables in the dataset.")
 
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 def eda_section():
     st.title("Exploratory Data Analysis (EDA)")
     st.write("Explore the dataset visually.")
@@ -175,6 +181,10 @@ def eda_section():
         ax.set_title("Pollutant Distribution")
         st.pyplot(fig)
 
+
+import streamlit as st
+import pandas as pd
+import joblib
 def modeling_prediction_section():
     st.title("Modeling and Prediction")
     st.write("Make predictions based on the trained model.")
