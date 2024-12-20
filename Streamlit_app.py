@@ -1,6 +1,4 @@
 import streamlit as st
-import pandas as pd
-import seaborn as sns
 
 def main():
     st.set_page_config(page_title="Air Quality Analysis App", layout="wide")
